@@ -1,0 +1,73 @@
+// Student grade management system
+
+fn calculateGrade(score) {
+    if (score >= 90) {
+        return "A"
+    } else if (score >= 80) {
+        return "B"
+    } else if (score >= 70) {
+        return "C"
+    } else if (score >= 60) {
+        return "D"
+    } else {
+        return "F"
+    }
+}
+
+fn calculateAverage(scores) {
+    let sum = 0
+    for (let i = 0; i < len(scores); i = i + 1) {
+        sum = sum + scores[i]
+    }
+    return sum / len(scores)
+}
+
+fn findLowestScore(scores) {
+    let lowest = scores[0]
+    for (let i = 1; i < len(scores); i = i + 1) {
+        if (scores[i] < lowest) {
+            lowest = scores[i]
+        }
+    }
+    return lowest
+}
+
+fn findHighestScore(scores) {
+    let highest = scores[0]
+    for (let i = 1; i < len(scores); i = i + 1) {
+        if (scores[i] > highest) {
+            highest = scores[i]
+        }
+    }
+    return highest
+}
+
+fn countPassingScores(scores, passingGrade) {
+    let count = 0
+    for (let i = 0; i < len(scores); i = i + 1) {
+        if (scores[i] >= passingGrade) {
+            count = count + 1
+        }
+    }
+    return count
+}
+
+// Student data (scores for different subjects)
+let mathScores = [85, 92, 78, 95, 88]
+let englishScores = [75, 88, 90, 82, 79]
+
+print("=== Math Class ===")
+print("Scores:", mathScores)
+print("Average:", calculateAverage(mathScores))
+print("Letter Grade:", calculateGrade(calculateAverage(mathScores)))
+print("Highest:", findHighestScore(mathScores))
+print("Lowest:", findLowestScore(mathScores))
+print("Passing (>=70):", countPassingScores(mathScores, 70))
+
+print("\n=== English Class ===")
+print("Scores:", englishScores)
+print("Average:", calculateAverage(englishScores))
+print("Letter Grade:", calculateGrade(calculateAverage(englishScores)))
+print("Highest:", findHighestScore(englishScores))
+print("Lowest:", findLowestScore(englishScores))
+print("Passing (>=70):", countPassingScores(englishScores, 70))

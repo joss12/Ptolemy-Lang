@@ -1,0 +1,13 @@
+
+
+let name = " Eddy"
+cst greeting = " hello"
+print(greeting + name)
+
+cst name = "Eddy";
+cst name1 = "Grace"
+cst result = "The names are ${name} and ${name1}"
+print(result)
+
+
+

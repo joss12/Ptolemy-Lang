@@ -1,0 +1,29 @@
+
+let a = 10;
+let b = 3
+
+
+//Basic Operations
+print("Addition:", a + b);
+print("Substraction:", a - b);
+print("Multiplication:", a * b);
+print("Division:", a / b);
+print("Modulo:", a % a)
+
+
+//Order of operations (PEMDAS)
+let result1 = 2 + 3 * 4
+print("2 + 3 * 4", result1) // 14, not 20
+
+let result2 = (2 + 3) * 4
+print("(2 + 3) + 4 =", result2) // 20 
+
+//Negative numbers
+let x = 5
+let negated = -x
+print("Negated:", negated) // -5
+
+
+//Complex expressions
+let complex = (10 + 5) * 2 - 8 / 4
+print("Complex:", complex) // 28 

@@ -1,0 +1,42 @@
+//simple if
+
+let age = 20
+
+if(age >= 18){
+print("You are not an adult")
+}
+
+//If-else
+let score = 75
+
+if (score >= 60){
+    print("Passed!")
+} else {
+    print("Failed")
+}
+
+// Nested if-else (grade calculator)
+let grade = 85
+
+if (grade >= 90){
+    print("Grade: A")
+}else if(grade >= 80){
+    print("Grade: B")
+}else if(grade >= 70){
+    print("Grade: C")
+}else if (grade >= 60){
+    print("Grade: D")
+}else {
+    print("Stay inside")
+}
+
+//Tenary-like with functions
+fn max(a, b){
+    if(a > b){
+    return a
+    }else{
+    return b
+    }
+}
+
+print("Max of 5 and 10:", max(5, 10))

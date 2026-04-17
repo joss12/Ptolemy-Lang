@@ -1,0 +1,21 @@
+fn binarySearch(arr, target, low, high) {
+    if (low > high) {
+        return -1
+    }
+
+    let mid = (low + high) / 2
+
+    if (arr[mid] == target) {
+        return mid
+    }
+
+    if (arr[mid] > target) {
+        return binarySearch(arr, target, low, mid - 1)
+    }
+
+    return binarySearch(arr, target, mid + 1, high)
+}
+
+let sorted = [1, 3, 5, 7, 9, 11, 13, 15]
+let index = binarySearch(sorted, 7, 0, len(sorted) - 1)
+print("Found 7 at index:", index)

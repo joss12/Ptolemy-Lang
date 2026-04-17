@@ -1,0 +1,81 @@
+
+//Bubble Sort
+fn bubbleSort(arr){
+    let n = len(arr);
+    for(let i = 0; i < n; i = i + 1){
+        for(let j = 0; j < n - i - 1; j = j + 1){
+            if(arr[j] > arr[j + 1]){
+                let temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+            }
+        }
+    }
+    return arr
+}
+
+let data1 = [64, 34, 25, 12, 22, 11, 90]
+print("Before:", data1)
+bubbleSort(data1)
+print("After Bubble Sort:", data1)
+
+
+// Selection Sort
+fn selectionSort(arr){
+    let n = len(arr)
+    for(let i = 0; i < n - 1; i = i +1){
+      let minIdx = i;
+      for(let j = i + 1; j < n; j = j + 1){
+        if(arr[j] < arr[minIdx]){
+            minIdx = j;
+        }
+      }
+      if(minIdx != i){
+        let temp = arr[i]
+        arr[i] = arr[minIdx]
+        arr[minIdx] = temp
+      }
+    }
+    return arr
+}
+
+let data2 =  [64, 34, 25, 12, 22, 11, 90]
+print("Before:", data2)
+selectionSort(data2)
+print("After Selection Sort:", data2)
+
+
+
+//Insertion Sort v1
+fn insertionSort(arr){
+    let n = len(arr)
+    for(let i = 1; i < n; i = i + 1){
+        let key = arr[i]
+        let j = i - 1
+
+        //Manually handle the condition to avoid index out of bounds
+        let shouldContinue = true
+        while(shouldContinue){
+            if(j >= 0){
+                if(arr[j] > key){
+                    arr[j + 1] = arr[j]
+                    j = j -1
+                }else{
+                    shouldContinue = false
+                }
+            }else{
+                shouldContinue = false
+            }
+        }
+        arr[j + 1] = key;
+    }
+    return arr
+}
+
+
+
+let data3 = [64, 34, 25, 12, 22, 11, 90]
+print("Before:", data3)
+insertionSort(data3)
+print("After Insertion Sort:", data3)
+

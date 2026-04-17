@@ -1,0 +1,59 @@
+//Classic factorial
+
+fn factorial(n) {
+    if(n <= 1){
+    return 1
+    }
+    return n * factorial(n - 1)
+}
+
+print("5! =", factorial(5))
+print("10! =", factorial(10))
+
+
+//Fibonacci sequence
+fn fibonacci(n){
+    if(n <= 1){
+        return n
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+//Print first 15 fibonacci numbers
+for (let i = 0; i < 15; i = i + 1){
+    print("fib(", i, ") =", fibonacci(i))
+}
+
+//Sum of numbers from 1 to n
+fn sumTo(n){
+    if(n <= 0){
+    return 0
+    }
+    return n + sumTo(n - 1)
+}
+
+print("Sum 1 to 100:", sumTo(100)) //5050
+
+//Count down
+fn countDown(n){
+    if (n <= 0){
+        print("Done !")
+        return null
+    }
+    print(n)
+    return countDown(n - 1)
+}
+countDown(5)
+
+// Power function (x^n)
+fn power(x, n){
+    if( n == 0){
+        return 1
+    }
+    return x * power(x, n - 1)
+}
+
+print("2^10 =", power(2, 10)) //1024
+
+
+

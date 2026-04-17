@@ -1,0 +1,80 @@
+// Basic closure - function remembers outer variable
+
+fn makeCounter(){
+    let count = 0;
+
+    fn increment(){
+        count = count + 1
+        return count
+    }
+
+    return increment
+}
+
+let counter1 = makeCounter()
+let counter2 = makeCounter()
+
+print(counter1()) //1
+print(counter1()) //2
+print(counter1()) //3
+print(counter2()) //1 (indenpendent closure) 
+print(counter1()) //4
+
+//Closure with parameter
+fn makeAdder(x){
+    fn add(y){
+        return x + y
+    }
+    return add
+}
+
+let add10 = makeAdder(10);
+let addd100 = makeAdder(100);
+
+print("10 + 5 =", add10(5)) //15
+print("100 + 5 =", addd100(5)) //105
+
+
+
+//Private state with closures
+fn createBankAccount(initialBalance){
+    let balance = initialBalance
+
+    fn deposit(amount){
+    balance = balance + amount
+    print("Deposited", amount, "- Balance:", balance)
+    return balance
+    }
+
+    fn withdraw(amount){
+        if(balance >= amount){
+        balance = balance - amount
+        print("Withdrew", amount, "- Balance:", balance)
+        return balance
+        }else {
+        print("Insufficient funds")
+        return balance
+        }
+    }
+
+    fn getBalance(){
+    return balance
+    }
+
+    //Return array of functions
+    return [deposit, withdraw, getBalance]
+}
+
+let account = createBankAccount(100)
+let dep = account[0]
+let with = account[1]
+let bal = account[2]
+
+dep(50)
+with(30)
+print("Current balance:", bal()) // 120
+
+
+
+
+

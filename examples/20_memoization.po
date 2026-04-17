@@ -1,0 +1,52 @@
+// Fibonacci with memoization using closures
+
+fn createMemoizedFibonacci() {
+    // Cache stored in closure
+    let cache = []
+    
+    fn fib(n) {
+        // Check cache first
+        if (n < len(cache)) {
+            if (cache[n] != null) {
+                return cache[n]
+            }
+        }
+        
+        // Base cases
+        if (n <= 1) {
+            // Ensure cache is large enough
+            while (len(cache) <= n) {
+                push(cache, null)
+            }
+            cache[n] = n
+            return n
+        }
+        
+        // Calculate and cache
+        let result = fib(n - 1) + fib(n - 2)
+        
+        // Ensure cache is large enough
+        while (len(cache) <= n) {
+            push(cache, null)
+        }
+        cache[n] = result
+        
+        return result
+    }
+    
+    return fib
+}
+
+// Create memoized version
+let fastFib = createMemoizedFibonacci()
+
+print("=== Memoized Fibonacci ===")
+for (let i = 0; i < 30; i = i + 1) {
+    print("fib(", i, ") =", fastFib(i))
+}
+
+// This is MUCH faster than regular recursive fibonacci
+// Try computing fib(30) with and without memoization!
+
+
+

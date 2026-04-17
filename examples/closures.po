@@ -1,0 +1,19 @@
+// Closures - counter with private state
+fn makeCounter() {
+    let count = 0
+
+    fn increment() {
+        count = count + 1
+        return count
+    }
+
+    return increment
+}
+
+let counter1 = makeCounter()
+let counter2 = makeCounter()
+
+print(counter1())
+print(counter1())
+print(counter2())
+print(counter1())

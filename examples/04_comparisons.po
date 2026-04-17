@@ -1,0 +1,35 @@
+// Comparaison operators
+
+let x = 10
+let y = 5
+
+
+print("10 == 5:", x == y); //false
+print("10 != 5:", x != y); //true
+print("10 > 5:", x > y); //true
+print("10 < 5:", x < y); //false
+print("10 >= 10:", x >= y); //true
+print("x <= 5:", x <= y) //false
+
+
+//Logical operators
+let a = true
+let b = false
+
+print("true && false:", a && b)  // false
+print("true || false:", a || b)  // true
+print("!true:", !a)              // false
+print("!false:", !b)             // true
+
+
+//Combining Logical
+let age = 25
+let hasLicense = true
+
+let canDrive = age >= 18 && hasLicense
+print("Can drive:", canDrive) //true
+
+//Truthiness
+print("!null:", !null); //true (null is falsy)
+print("!0:", !0) //false (numbers are truthy)
+print("!5:", !5) //false

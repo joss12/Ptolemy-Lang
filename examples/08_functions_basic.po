@@ -1,0 +1,56 @@
+//simple function
+fn greet(){
+    print("Hello, World!")
+}
+
+greet();
+
+//Function with parameters
+fn greetPerson(name){
+    print("Hello,", name)
+}
+
+greetPerson("Alice")
+greetPerson("Bob")
+
+
+//Function with return value
+fn add(a, b){
+    return a + b
+}
+
+let result = add(5, 3)
+print("5 + 3 =", result)
+
+
+//Multiple parameters
+fn calculateArea(width, height){
+    return width * height
+}
+
+print("Area of 10x5:", calculateArea(10, 5))
+
+
+//Function with early return
+fn isEven(n){
+    if(n % 2 == 0){
+    return true
+    }
+    return false
+}
+
+print("IS 4 even?", isEven(4))
+print("Is 7 even?", isEven(7))
+
+//Function can call other functions
+fn square(n){
+    return n * n
+}
+
+fn sumOfSquares(a, b){
+    return square(a) + square(b)
+}
+
+print("Sum of square of 3 and 4", sumOfSquares(3, 4));
+
+

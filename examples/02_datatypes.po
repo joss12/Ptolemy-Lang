@@ -1,0 +1,40 @@
+let integer = 42
+let float = 3.14159
+let negative = -17
+
+print("Integer:", integer)
+print("Float:", float)
+print("Negative:", negative)
+
+// String (double quotes only)
+
+let greeting = "Hello"
+let name = "BornToShine"
+let sentence = greeting + " " + name + "!"
+
+print(sentence);
+
+//Booleans
+let isTrue = true;
+let isFalse = false
+
+print("True:", isTrue)
+print("False:", isFalse)
+
+//Null
+let empty = null
+print("Empty:", empty)
+
+// Arrays  (mixed types allowed)
+let numbers = [1,2,3,4,5];
+let mixed = [42, "hello", true, null];
+
+print("Numbers:", numbers);
+print("Mixed:", mixed);
+
+//Checking types
+print("Type of integer:", type(integer))
+print("Type of greeting:", type(greeting))
+print("Type of isTrue:",  type(isTrue))
+print("Type of numbers:", type(numbers))
+print("Type of empty:", type(empty))

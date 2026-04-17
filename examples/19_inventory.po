@@ -1,0 +1,83 @@
+// Simple inventory management using parallel arrays
+
+// Product data
+cst names = ["Laptop", "Mouse", "Keyboard", "Monitor", "Webcam"]
+cst prices = [1000, 25, 75, 300, 50]
+let stock = [5, 20, 15, 8, 12]
+
+fn displayInventory() {
+    print("\n=== Current Inventory ===")
+    for (let i = 0; i < len(names); i = i + 1) {
+        print(names[i], "- $", prices[i], "- Stock:", stock[i])
+    }
+}
+
+fn findProductIndex(name) {
+    for (let i = 0; i < len(names); i = i + 1) {
+        if (names[i] == name) {
+            return i
+        }
+    }
+    return -1
+}
+
+fn sellProduct(name, quantity) {
+    let idx = findProductIndex(name)
+    if (idx == -1) {
+        print("Product not found")
+        return false
+    }
+    
+    if (stock[idx] < quantity) {
+        print("Insufficient stock")
+        return false
+    }
+    
+    stock[idx] = stock[idx] - quantity
+    let total = prices[idx] * quantity
+    print("Sold", quantity, name, "for $", total)
+    return true
+}
+
+fn restockProduct(name, quantity) {
+    let idx = findProductIndex(name)
+    if (idx == -1) {
+        print("Product not found")
+        return false
+    }
+    
+    stock[idx] = stock[idx] + quantity
+    print("Restocked", quantity, name)
+    return true
+}
+
+fn calculateTotalValue() {
+    let total = 0
+    for (let i = 0; i < len(names); i = i + 1) {
+        total = total + prices[i] * stock[i]
+    }
+    return total
+}
+
+fn lowStockAlert(threshold) {
+    print("\n=== Low Stock Alert ===")
+    for (let i = 0; i < len(names); i = i + 1) {
+        if (stock[i] < threshold) {
+            print(names[i], "- Only", stock[i], "left!")
+        }
+    }
+}
+
+// Run inventory simulation
+displayInventory()
+
+print("\n--- Transactions ---")
+sellProduct("Laptop", 2)
+sellProduct("Mouse", 5)
+restockProduct("Laptop", 10)
+sellProduct("Webcam", 3)
+
+displayInventory()
+
+print("\nTotal inventory value: $", calculateTotalValue())
+lowStockAlert(10)

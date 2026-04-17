@@ -1,0 +1,27 @@
+//Variable can be reassigned
+let age = 25
+print("Age:", age)
+
+age = 26
+print("Age after birthday:", age)
+
+// Constant cannot be reassigned
+cst PI = 3.14159
+cst companyName = "EGS"
+
+print("PI:", PI)
+print("Company:", companyName)
+
+// PI = 3.14  // Error: cannot reassign constant
+PI = 3.14
+
+//Variable scope
+let global = "I'm global"
+
+fn testScope(){
+	let local = "I'm local"
+	print("Inside function:", local)
+	print("Can access global:", global)
+}
+
+testScope()

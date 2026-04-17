@@ -1,0 +1,41 @@
+//Functions are first-class  values
+
+fn double(x){
+    return x * 2
+}
+
+let myFunction = double;
+print("Call via variable:", myFunction(5)); // 10
+
+
+fn makeMultiplier(factor){
+    fn multiply(x){
+        return x * factor
+    }
+    return multiply
+}
+
+let times3 = makeMultiplier(3)
+let times5 = makeMultiplier(5)
+
+print("3 * 4 =", times3(4))
+print("5 * 4 =", times5(4))
+
+//Functions can take functions as parameters
+fn applyTwice(func, value){
+    let result = func(value)
+    return func(result)
+}
+
+print("Double 5 twice:", applyTwice(double, 5));
+
+//More complex higher-order function
+fn operate(a, b, operation){
+    return operation(a, b)
+}
+
+fn add(x, y) {return x + y}
+fn multiply(x, y) {return x * y}
+
+print("3 + 5 =", operate(3, 5, add))
+print("3 + 5 =", operate(3, 5, multiply))

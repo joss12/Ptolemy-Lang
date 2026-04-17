@@ -1,0 +1,33 @@
+//Basic for loop
+for (let i = 0;  i < 5; i = i + 1){
+    print("Iteration:", i)
+}
+
+//Iterate through array
+let fruits = ["apple", "banana", "cherry"]
+
+for (let i = 0; i < len(fruits); i = i + 1){
+    print("Fruits", i, ":", fruits[i])
+}
+
+//Sum array
+let numbers = [10, 20, 30, 40, 50]
+let total = 0
+
+for (let i = 0; i < len(numbers); i = i + 1){
+    total = total + numbers[i]
+}
+
+print("Total:", total)
+
+
+//Nested for loops (multiplication table)
+print("5x5 Multiplication Table:")
+for (let i = 1; i <= 5; i = i + 1) {
+    let row = ""
+    for (let j = 1; j <= 5; j = j + 1) {
+        let product = i * j
+        row = row + product + " "
+    }
+    print(row)
+}

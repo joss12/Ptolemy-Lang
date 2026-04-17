@@ -1,0 +1,27 @@
+cst products = [
+["laptop", 1000, 5],
+["desktop", 1200, 2],
+["phone", 500, 10]
+]
+
+cst totalValues = []
+for (let i  = 0; i < len(products); i = i +1){
+    let product = products[i]
+    let name = product[0]
+    let price = product[1]
+    let count = product[2]
+    let value = price * count
+    push(totalValues, value)
+}
+
+print("Total value:", totalValues)
+
+//Calculate the sum
+let sum = 0
+for (let i = 0; i < len(totalValues); i = i +1){
+sum = sum +totalValues[i]
+}
+
+print("Grand total:", sum)
+
+

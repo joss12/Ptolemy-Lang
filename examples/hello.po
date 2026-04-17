@@ -1,0 +1,4 @@
+
+let name = "Eddy"
+print("Hello", name)
+print("Welcome to Ptolemy Lang!")

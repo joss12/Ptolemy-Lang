@@ -1,0 +1,43 @@
+//Create arrays
+
+let empty = [];
+let numbers = [1, 2, 3, 4, 5]
+let mixed = [10, "hello", true, null]
+
+print("Empty:", empty)
+print("Numbers:", numbers)
+print("Mixed:", mixed)
+
+
+//Array length
+print("Length of numbers:", len(numbers)) // 5
+
+// Access elements
+print("First:", numbers[0]) //1
+print("Last:", numbers[4]) //5
+print("Middle:", numbers[2])
+
+
+//Modify elements
+numbers[0] = 100;
+print("Modified:", numbers) // [100, 2, 3, 4, 5]
+
+
+//Add elements
+push(numbers, 6)
+push(numbers, 7)
+print("After push:", numbers)
+
+
+//remove last element
+let removed = pop(numbers)
+print("Popped:", removed)
+print("After pop:", numbers)
+
+
+//Iterate through array
+for (let i = 0; i < len(numbers); i = i + 1){
+    print("numbers[", i, "]", numbers[i])
+}
+
+
