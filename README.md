@@ -231,15 +231,15 @@ See the `examples/` directory for comprehensive demonstrations:
 
 | File | Description | Concepts |
 |------|-------------|----------|
-| `01_variables.mini` | Variable scoping | let, cst, scope |
-| `10_closures.mini` | Closure mechanics | Environment capture |
-| `11_recursion.mini` | Recursive algorithms | Base cases, tail calls |
-| `15_sorting.mini` | Sorting algorithms | Bubble, selection, insertion |
-| `20_memoization.mini` | Dynamic programming | Optimization via caching |
+| `01_variables.po` | Variable scoping | let, cst, scope |
+| `10_closures.po` | Closure mechanics | Environment capture |
+| `11_recursion.po` | Recursive algorithms | Base cases, tail calls |
+| `15_sorting.po` | Sorting algorithms | Bubble, selection, insertion |
+| `20_memoization.po` | Dynamic programming | Optimization via caching |
 
 Run all examples:
 ```bash
-for file in examples/*.mini; do
+for file in examples/*.po; do
     echo "Running $file..."
     ./ptolemy "$file"
     echo "---"

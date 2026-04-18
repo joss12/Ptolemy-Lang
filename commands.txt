@@ -1,117 +1,120 @@
 ./ptolemy examples/01_variables.po
- 7106  clear
- 7107  ./ptolemy examples/02_datatypes.po
- 7108  clear
- 7109  ./ptolemy examples/02_datatypes.po
- 7110  exit
- 7111  clear
- 7112  nvim
- 7113  ./ptolemy examples/02_datatypes.po
- 7114  exit
- 7115  ./ptolemy examples/03_arithmetic.po
- 7116  clear
- 7117  ./ptolemy examples/03_arithmetic.po
- 7118  clear
- 7119  ./ptolemy examples/03_arithmetic.po
- 7120  ./ptolemy examples/03_comparaison.po
- 7121  ./ptolemy examples/04_comparaison.po
- 7122  ./ptolemy examples/04_comparaisons.po
- 7123  exit
- 7124  ./ptolemy examples/04_comparisons.po
- 7125  clear
- 7126  exit
- 7127  ./ptolemy examples/04_comparisons.po
- 7128  go build -o ptolemy
- 7129  clear
- 7130  ./ptolemy examples/04_comparisons.po
- 7131  clear
- 7132  ./ptolemy examples/04_comparisons.po
- 7133  clear
- 7134  ./ptolemy examples/04_comparisons.po
- 7135  clear
- 7136  ./ptolemy examples/04_comparisons.po
- 7137  ./ptolemy examples/05_conditions.po
- 7138  ./ptolemy examples/05_conditional.po
- 7139  ./ptolemy examples/05_conditionals.po
- 7140  clear
- 7141  ./ptolemy examples/05_conditionals.po
- 7142  clear
- 7143  ./ptolemy examples/05_conditionals.po
- 7144  clear
- 7145  ./ptolemy examples/05_conditionals.po
- 7146  clear
- 7147  go build -o ptolemy
- 7148  clear
- 7149  ./ptolemy examples/05_conditionals.po
- 7150  clear
- 7151  ./ptolemy examples/05_conditionals.po
- 7152  ./ptolemy examples/06_while.po
- 7153  clear
- 7154  ./ptolemy examples/06_while.po
- 7155  clear
- 7156  ./ptolemy examples/06_while.po
- 7157  exit
- 7158  clear
- 7159  ./ptolemy examples/06_while.po
- 7160  clear
- 7161  exit
- 7162  ./ptolemy examples/06_while.po
- 7163  exit
- 7164  ./ptolemy examples/07_for.po
- 7165  exit
- 7166  ./ptolemy examples/07_for.po
- 7167  exit
- 7168  ./ptolemy examples/07_for.po
- 7169  exit
- 7170  ./ptolemy examples/07_for.po
- 7171  clear
- 7172  ./ptolemy examples/07_for.po
- 7173  clear
- 7174  ./ptolemy examples/07_for.po
- 7175  clear
- 7176  go build -o ptolemy
- 7177  ./ptolemy examples/07_for.po
- 7178  clear
- 7179  ./ptolemy examples/08_functions_basic.po
- 7180  exit
- 7181  ./ptolemy examples/08_functions_basic.po
- 7182  clear
- 7183  ./ptolemy examples/08_functions_basic.po
- 7184  clear
- 7185  ./ptolemy examples/08_functions_basic.po
- 7186  clear
- 7187  ./ptolemy examples/08_functions_basic.po
- 7188  clear
- 7189  exit
- 7190  ./ptolemy examples/08_functions_basic.po
- 7191  ./ptolemy examples/09_functions_advanced.po
- 7192  clear
- 7193  ./ptolemy examples/09_functions_advanced.po
- 7194  exit
- 7195  ./ptolemy examples/09_functions_advanced.po
- 7196  exit
- 7197  iclear
- 7198  clear
- 7199  ./ptolemy examples/10_closures.po
- 7200  clear
- 7201  ./ptolemy examples/10_closures.po
- 7202  exit
- 7203  ./ptolemy examples/09_functions_advanced.po
- 7204  ./ptolemy examples/10_closures.po
- 7205  exit
- 7206  ./ptolemy examples/11_recursion.po
- 7207  clear
- 7208  ./ptolemy examples/11_recursion.po
- 7209  clear
- 7210  ./ptolemy examples/11_recursion.po
- 7211  exit
- 7212  ./ptolemy examples/11_recursion.po
- 7213  clear
- 7214  ./ptolemy examples/11_recursion.po
- 7215  exit
- 7216  ./ptolemy examples/11_recursion.po
- 7217  clear
- 7218  ./ptolemy examples/11_recursion.po
- 7219  clear
- 7220  ./ptolemy examples/11_recursion.po
 
+./ptolemy examples/02_datatypes.po
+ 
+./ptolemy examples/02_datatypes.po
+
+./ptolemy examples/02_datatypes.po
+ 
+./ptolemy examples/03_arithmetic.po
+ 
+./ptolemy examples/03_arithmetic.po
+ 
+./ptolemy examples/03_arithmetic.po
+ 
+./ptolemy examples/03_comparaison.po
+ 
+./ptolemy examples/04_comparaison.po
+ 
+./ptolemy examples/04_comparaisons.po
+ 
+./ptolemy examples/04_comparisons.po
+
+./ptolemy examples/04_comparisons.po
+
+
+./ptolemy examples/04_comparisons.po
+
+./ptolemy examples/04_comparisons.po
+
+./ptolemy examples/04_comparisons.po
+
+./ptolemy examples/04_comparisons.po
+
+./ptolemy examples/05_conditions.po
+
+./ptolemy examples/05_conditional.po
+
+./ptolemy examples/05_conditionals.po
+
+./ptolemy examples/05_conditionals.po
+
+./ptolemy examples/05_conditionals.po
+
+./ptolemy examples/05_conditionals.po
+
+./ptolemy examples/05_conditionals.po
+
+./ptolemy examples/05_conditionals.po
+ 
+./ptolemy examples/06_while.po
+
+./ptolemy examples/06_while.po
+
+./ptolemy examples/06_while.po
+
+./ptolemy examples/06_while.po
+
+./ptolemy examples/06_while.po
+
+./ptolemy examples/07_for.po
+
+./ptolemy examples/07_for.po
+
+./ptolemy examples/07_for.po
+
+./ptolemy examples/07_for.po
+
+./ptolemy examples/07_for.po
+
+./ptolemy examples/07_for.po
+
+ 
+./ptolemy examples/07_for.po
+  
+./ptolemy examples/08_functions_basic.po
+
+./ptolemy examples/08_functions_basic.po
+
+./ptolemy examples/08_functions_basic.po
+ 
+./ptolemy examples/08_functions_basic.po
+ 
+./ptolemy examples/08_functions_basic.po
+
+
+./ptolemy examples/08_functions_basic.po
+
+./ptolemy examples/09_functions_advanced.po
+
+./ptolemy examples/09_functions_advanced.po
+
+./ptolemy examples/09_functions_advanced.po
+
+./ptolemy examples/10_closures.po
+
+./ptolemy examples/10_closures.po
+
+./ptolemy examples/09_functions_advanced.po
+ 
+./ptolemy examples/10_closures.po
+
+./ptolemy examples/11_recursion.po
+
+./ptolemy examples/11_recursion.ptolemy
+
+./ptolemy examples/11_recursion.po
+
+./ptolemy examples/11_recursion.po
+
+./ptolemy examples/11_recursion.po
+
+./ptolemy examples/11_recursion.po
+ 
+./ptolemy examples/11_recursion.po
+
+./ptolemy examples/11_recursion.po
+
+
+
+ go build -o ptolemy
